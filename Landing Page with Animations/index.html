@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fictional Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+<header class="header">
+    <div class="logo">
+        <img src="/images/logo.jpeg" alt="ProductLogo" style="width: 100px; height: 50;">
+    </div>
+
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#Product">Product</a></li>
+                <li><a href="#New Arrival">New Arrival</a></li>
+                <li><a href="#Faq">Faq</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Yo Mobile</h1>
+            <p>"Discover Your Ultimate Solution Today!"</p>
+            <a href="#features" class="cta-button">Explore Features</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Product Features</h2>
+        <div class="feature-cards">
+            <div class="feature-card" id="card1">
+                <img src="/images/product1.webp" alt="Product Image 1" class="product-image">
+                <h3>Feature One</h3>
+                <p>This is an amazing feature of our product.</p>
+            </div>
+            <div class="feature-card" id="card2">
+                <img src="/images/product2.webp" alt="Product Image 2" class="product-image">
+                <h3>Feature Two</h3>
+                <p>Another great benefit you’ll love.</p>
+            </div>
+            <div class="feature-card" id="card3">
+                <img src="/images/product3.jpeg" alt="Product Image 3" class="product-image">
+                <h3>Feature Three</h3>
+                <p>Unleash the power of efficiency.</p>
+            </div>
+                <div class="feature-card" id="card4">
+                    <img src="/images/product3.jpeg" alt="Product Image 3" class="product-image">
+                    <h3>Feature Three</h3>
+                    <p>Unleash the power of efficiency.</p>
+                </div>
+
+                    <div class="feature-card" id="card5">
+                        <img src="/images/product3.jpeg" alt="Product Image 3" class="product-image">
+                        <h3>Feature Three</h3>
+                        <p>Unleash the power of efficiency.</p>
+                    </div>
+
+                        <div class="feature-card" id="card6">
+                            <img src="/images/product3.jpeg" alt="Product Image 3" class="product-image">
+                            <h3>Feature Three</h3>
+                            <p>Unleash the power of efficiency.</p>
+                        </div>
+
+            </div>
+        </div>
+        <button class="more-info-btn" onclick="showModal()">More Info</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content" style="text-align: center;"> <!-- Centered content -->
+        <p>&copy; 2024 ProductCompany. All Rights Reserved.</p>
+        <div class="social-icons" style="display: flex; justify-content: center; gap: 10px;"> <!-- Centered icons with spacing -->
+            <a href="#"><img src="/images/facebook.png" alt="Facebook" style="width: 24px; height: 24px;"></a> <!-- Uniform size -->
+            <a href="#"><img src="/images/instagram.png" alt="Instagram" style="width: 24px; height: 24px;"></a> <!-- Uniform size -->
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Modal for More Info -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>More About Feature One</h3>
+            <p>Feature One is designed to give you a seamless experience with powerful benefits, including increased efficiency and ease of use.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

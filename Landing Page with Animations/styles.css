@@ -1,0 +1,325 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Darker base background */
+    background-image: linear-gradient(145deg, #1a1a2e 50%, #0f0f1a 100%); /* Two-tone dark gradient */
+    color: #d9d9d9; /* Light text for contrast */
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #0f0f1a; /* Darker header */
+    color: #fff;
+}
+.header .logo img {
+    width: 05px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+
+.header nav ul li a {
+    color: #ff4d4f; /* Red text */
+    text-decoration: none;
+    font-size: 25px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #fff; /* Emboss effect */
+    transition: color 0.3s, transform 0.3s; /* Animation */
+}
+
+.header nav ul li a:hover {
+    color: #d93a3e; /* Darker red on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+
+.header nav ul li a {
+    color: #ff4d4f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+    color: #ff4d4f; /* Red hover effect */
+}
+
+/* Hero Section Styling */
+.hero {
+    background:url('/images/bg.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    color: #ff4d4f; /* Embossed red title */
+    text-shadow: 4px 4px 8px #1a1a2e, -4px -4px 8px #0f0f1a; /* Emboss effect */
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: fadeInUp 2s forwards;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeInUp 3s forwards;
+    color: #f00d0d; /* Lighter gray text */
+    text-shadow: 4px 4px 8px #1a1a2e, -4px -4px 8px #0f0f1a; /* Emboss effect */
+}
+
+.cta-button {
+    background-color: #ff4d4f; /* Red button */
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeInUp 4s forwards;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #d93a3e; /* Darker red on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Features Section Styling */
+.features {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1a1a2e;
+    color: #fff;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff4d4f;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #27293d; /* Dark gray card background */
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #d1d1d1;
+    text-align: center;
+}
+
+.feature-card img {
+    width: 100%; /* Make image fill the width of the card */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #ff4d4f;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #d1d1d1;
+}
+
+
+.feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    background-color: #ff4d4f; /* Light red on hover */
+}
+
+/* Contact Section Styling */
+.contact {
+    padding: 60px 20px;
+    background-color: #0f0f1a;
+    color: #fff;
+    text-align: center;
+}
+
+/* 3D and Animated Table Design */
+.contact-form {
+    display: inline-block;
+    width: 80%; /* Wider table */
+    text-align: left;
+    background-color: #1a1a2e;
+    padding: 30px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), inset 0 0 15px rgba(255, 255, 255, 0.1); /* 3D effect */
+    animation: slideIn 0.7s ease-in-out; /* Added sliding animation */
+}
+
+/* Embossed Title */
+.contact-form h2 {
+    color: #ff4d4f;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Embossed effect */
+    margin-bottom: 20px;
+}
+
+/* Form Labels and Fields */
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ff4d4f; /* Text color */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Full width */
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ff4d4f;
+    border-radius: 8px;
+    background-color: #27293d;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight 3D effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    transform: scale(1.05); /* Enlarge on focus */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on focus */
+    background-color: #333;
+    outline: none;
+}
+
+/* Animation for sliding in the form */
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Centered Button Below the Form */
+.contact-form button {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 40px;
+    background-color: #ff4d4f;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e04345;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Hover Effect */
+.contact-form button:active {
+    transform: scale(0.98); /* Slight compression on click */
+}
+
+/* Footer Section */
+.contact .footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px); /* Slide in from the bottom */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Darker modal overlay */
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.modal-content {
+    background-color: #333;
+    padding: 40px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
